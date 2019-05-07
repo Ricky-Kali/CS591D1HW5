@@ -1,0 +1,8 @@
+extend layout
+
+block content
+    h1 ALPHA VANTAGE stock
+    h1  #{title['1. Information']}
+    ul
+        each val, key in list
+            li time:#{key},open:#{val['1. open']}, high:#{val['2. high']}, low#{val['3. low']}, close#{val['4. close']}, volume#{val['5. volume']}
